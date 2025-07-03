@@ -1,1 +1,128 @@
-const mathQuestions = {"Test 1": [{"question": "Mathematics T1 Q1", "options": ["A0", "B0", "C0", "D0"], "answer": 0}, {"question": "Mathematics T1 Q2", "options": ["A1", "B1", "C1", "D1"], "answer": 1}, {"question": "Mathematics T1 Q3", "options": ["A2", "B2", "C2", "D2"], "answer": 2}, {"question": "Mathematics T1 Q4", "options": ["A3", "B3", "C3", "D3"], "answer": 3}, {"question": "Mathematics T1 Q5", "options": ["A4", "B4", "C4", "D4"], "answer": 0}, {"question": "Mathematics T1 Q6", "options": ["A5", "B5", "C5", "D5"], "answer": 1}, {"question": "Mathematics T1 Q7", "options": ["A6", "B6", "C6", "D6"], "answer": 2}, {"question": "Mathematics T1 Q8", "options": ["A7", "B7", "C7", "D7"], "answer": 3}, {"question": "Mathematics T1 Q9", "options": ["A8", "B8", "C8", "D8"], "answer": 0}, {"question": "Mathematics T1 Q10", "options": ["A9", "B9", "C9", "D9"], "answer": 1}, {"question": "Mathematics T1 Q11", "options": ["A10", "B10", "C10", "D10"], "answer": 2}, {"question": "Mathematics T1 Q12", "options": ["A11", "B11", "C11", "D11"], "answer": 3}, {"question": "Mathematics T1 Q13", "options": ["A12", "B12", "C12", "D12"], "answer": 0}, {"question": "Mathematics T1 Q14", "options": ["A13", "B13", "C13", "D13"], "answer": 1}, {"question": "Mathematics T1 Q15", "options": ["A14", "B14", "C14", "D14"], "answer": 2}, {"question": "Mathematics T1 Q16", "options": ["A15", "B15", "C15", "D15"], "answer": 3}, {"question": "Mathematics T1 Q17", "options": ["A16", "B16", "C16", "D16"], "answer": 0}, {"question": "Mathematics T1 Q18", "options": ["A17", "B17", "C17", "D17"], "answer": 1}, {"question": "Mathematics T1 Q19", "options": ["A18", "B18", "C18", "D18"], "answer": 2}, {"question": "Mathematics T1 Q20", "options": ["A19", "B19", "C19", "D19"], "answer": 3}, {"question": "Mathematics T1 Q21", "options": ["A20", "B20", "C20", "D20"], "answer": 0}, {"question": "Mathematics T1 Q22", "options": ["A21", "B21", "C21", "D21"], "answer": 1}, {"question": "Mathematics T1 Q23", "options": ["A22", "B22", "C22", "D22"], "answer": 2}, {"question": "Mathematics T1 Q24", "options": ["A23", "B23", "C23", "D23"], "answer": 3}, {"question": "Mathematics T1 Q25", "options": ["A24", "B24", "C24", "D24"], "answer": 0}], "Test 2": [{"question": "Mathematics T2 Q1", "options": ["A0", "B0", "C0", "D0"], "answer": 1}, {"question": "Mathematics T2 Q2", "options": ["A1", "B1", "C1", "D1"], "answer": 2}, {"question": "Mathematics T2 Q3", "options": ["A2", "B2", "C2", "D2"], "answer": 3}, {"question": "Mathematics T2 Q4", "options": ["A3", "B3", "C3", "D3"], "answer": 0}, {"question": "Mathematics T2 Q5", "options": ["A4", "B4", "C4", "D4"], "answer": 1}, {"question": "Mathematics T2 Q6", "options": ["A5", "B5", "C5", "D5"], "answer": 2}, {"question": "Mathematics T2 Q7", "options": ["A6", "B6", "C6", "D6"], "answer": 3}, {"question": "Mathematics T2 Q8", "options": ["A7", "B7", "C7", "D7"], "answer": 0}, {"question": "Mathematics T2 Q9", "options": ["A8", "B8", "C8", "D8"], "answer": 1}, {"question": "Mathematics T2 Q10", "options": ["A9", "B9", "C9", "D9"], "answer": 2}, {"question": "Mathematics T2 Q11", "options": ["A10", "B10", "C10", "D10"], "answer": 3}, {"question": "Mathematics T2 Q12", "options": ["A11", "B11", "C11", "D11"], "answer": 0}, {"question": "Mathematics T2 Q13", "options": ["A12", "B12", "C12", "D12"], "answer": 1}, {"question": "Mathematics T2 Q14", "options": ["A13", "B13", "C13", "D13"], "answer": 2}, {"question": "Mathematics T2 Q15", "options": ["A14", "B14", "C14", "D14"], "answer": 3}, {"question": "Mathematics T2 Q16", "options": ["A15", "B15", "C15", "D15"], "answer": 0}, {"question": "Mathematics T2 Q17", "options": ["A16", "B16", "C16", "D16"], "answer": 1}, {"question": "Mathematics T2 Q18", "options": ["A17", "B17", "C17", "D17"], "answer": 2}, {"question": "Mathematics T2 Q19", "options": ["A18", "B18", "C18", "D18"], "answer": 3}, {"question": "Mathematics T2 Q20", "options": ["A19", "B19", "C19", "D19"], "answer": 0}, {"question": "Mathematics T2 Q21", "options": ["A20", "B20", "C20", "D20"], "answer": 1}, {"question": "Mathematics T2 Q22", "options": ["A21", "B21", "C21", "D21"], "answer": 2}, {"question": "Mathematics T2 Q23", "options": ["A22", "B22", "C22", "D22"], "answer": 3}, {"question": "Mathematics T2 Q24", "options": ["A23", "B23", "C23", "D23"], "answer": 0}, {"question": "Mathematics T2 Q25", "options": ["A24", "B24", "C24", "D24"], "answer": 1}]};
+const mathQuestions = {
+  "Test 1": [
+    {
+      question: "A can complete a work in 20 days, B in 30 days. In how many days will they complete it together?",
+      options: ["10", "12", "15", "18"],
+      answer: 1
+    },
+    {
+      question: "The average of five consecutive odd numbers is 25. What is the smallest number?",
+      options: ["19", "21", "23", "25"],
+      answer: 1
+    },
+    {
+      question: "If 40% of a number is 200, what is 25% of the same number?",
+      options: ["100", "125", "150", "200"],
+      answer: 1
+    },
+    {
+      question: "Simplify: (x² - 25)/(x - 5)",
+      options: ["x + 5", "x - 5", "x² - 5", "x² + 5"],
+      answer: 0
+    },
+    {
+      question: "The ratio of two numbers is 3:5. Their LCM is 240. What is their HCF?",
+      options: ["8", "16", "24", "48"],
+      answer: 2
+    },
+    {
+      question: "The diagonal of a rectangle is 25 cm and one side is 7 cm. Find the other side.",
+      options: ["24", "20", "18", "16"],
+      answer: 0
+    },
+    {
+      question: "If sin A = 3/5, then cos A = ?",
+      options: ["4/5", "5/3", "5/4", "3/4"],
+      answer: 0
+    },
+    {
+      question: "A sum becomes ₹8820 in 2 years at 10% compound interest. What is the principal?",
+      options: ["7200", "7500", "8000", "8200"],
+      answer: 2
+    },
+    {
+      question: "If x + 1/x = 5, find x² + 1/x².",
+      options: ["21", "23", "25", "27"],
+      answer: 0
+    },
+    {
+      question: "Volume of a sphere with radius 3 cm is:",
+      options: ["113.1", "113.4", "113.6", "113.0"],
+      answer: 0
+    },
+    {
+      question: "Two numbers differ by 4 and their product is 96. What are the numbers?",
+      options: ["8 & 12", "6 & 10", "10 & 14", "4 & 8"],
+      answer: 0
+    },
+    {
+      question: "If a:b = 2:3 and b:c = 4:5, what is a:c?",
+      options: ["8:15", "2:5", "4:5", "5:8"],
+      answer: 0
+    },
+    {
+      question: "Find the area of a rhombus with diagonals 12 cm and 16 cm.",
+      options: ["96", "112", "78", "72"],
+      answer: 0
+    },
+    {
+      question: "If 2x + 3y = 12 and 4x - y = 5, find x.",
+      options: ["1", "2", "3", "4"],
+      answer: 2
+    },
+    {
+      question: "The CI on ₹8000 at 5% for 2 years is:",
+      options: ["800", "820", "824", "850"],
+      answer: 2
+    },
+    {
+      question: "If a number is divided by 7, the remainder is 3. What is the remainder when the square is divided by 7?",
+      options: ["1", "2", "4", "5"],
+      answer: 0
+    },
+    {
+      question: "In how many ways can the letters of the word 'MATHS' be arranged?",
+      options: ["60", "120", "240", "720"],
+      answer: 1
+    },
+    {
+      question: "What is the median of: 13, 18, 13, 14, 13, 16, 14?",
+      options: ["13", "14", "15", "16"],
+      answer: 1
+    },
+    {
+      question: "Find the probability of getting a prime number on a die.",
+      options: ["1/2", "1/3", "2/3", "1/6"],
+      answer: 0
+    },
+    {
+      question: "If x² - 7x + 12 = 0, find the roots.",
+      options: ["3 & 4", "2 & 6", "1 & 12", "None"],
+      answer: 0
+    },
+    {
+      question: "Selling price is ₹880, loss is 12%. Find cost price.",
+      options: ["1000", "950", "800", "960"],
+      answer: 0
+    },
+    {
+      question: "The angle between the hands at 3:30 is:",
+      options: ["90°", "75°", "60°", "45°"],
+      answer: 1
+    },
+    {
+      question: "What is the unit digit of 7¹⁰⁰?",
+      options: ["1", "7", "9", "3"],
+      answer: 1
+    },
+    {
+      question: "√2025 = ?",
+      options: ["35", "40", "45", "50"],
+      answer: 2
+    },
+    {
+      question: "Speed = 60 km/h. Time = 1.5 h. Distance = ?",
+      options: ["80", "90", "100", "110"],
+      answer: 1
+    }
+  ],
