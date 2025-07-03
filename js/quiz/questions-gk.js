@@ -126,3 +126,136 @@ const gkQuestions = {
       answer: 3
     }
   ],
+  "Test 2": [
+    {
+      question: "Who was the first Indian in space?",
+      options: ["Kalpana Chawla", "Rakesh Sharma", "Sunita Williams", "Vikram Sarabhai"],
+      answer: 1
+    },
+    {
+      question: "Which organ purifies blood in the human body?",
+      options: ["Heart", "Liver", "Kidney", "Lungs"],
+      answer: 2
+    },
+    {
+      question: "Which Indian city is famous for Charminar?",
+      options: ["Hyderabad", "Mumbai", "Delhi", "Bangalore"],
+      answer: 0
+    },
+    {
+      question: "Where is the headquarters of the United Nations?",
+      options: ["London", "Paris", "Geneva", "New York"],
+      answer: 3
+    },
+    {
+      question: "Which vitamin is produced in the skin on exposure to sunlight?",
+      options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+      answer: 3
+    },
+    {
+      question: "Which continent is known as the 'Dark Continent'?",
+      options: ["Asia", "Africa", "Australia", "Europe"],
+      answer: 1
+    },
+    {
+      question: "Which Indian river is known as the 'Sorrow of Bengal'?",
+      options: ["Ganga", "Kosi", "Damodar", "Yamuna"],
+      answer: 2
+    },
+    {
+      question: "Which Indian is called the Missile Man?",
+      options: ["Vikram Sarabhai", "Homi Bhabha", "APJ Abdul Kalam", "Satish Dhawan"],
+      answer: 2
+    },
+    {
+      question: "Which city is famous for the Golden Temple?",
+      options: ["Amritsar", "Delhi", "Chandigarh", "Jalandhar"],
+      answer: 0
+    },
+    {
+      question: "Which state is called the 'Land of Five Rivers'?",
+      options: ["Punjab", "Haryana", "Rajasthan", "Bihar"],
+      answer: 0
+    },
+    {
+      question: "Which country gifted the Statue of Liberty to the USA?",
+      options: ["France", "Germany", "Italy", "Spain"],
+      answer: 0
+    },
+    {
+      question: "Who invented the light bulb?",
+      options: ["Newton", "Tesla", "Edison", "Faraday"],
+      answer: 2
+    },
+    {
+      question: "What is the currency of Japan?",
+      options: ["Won", "Yen", "Yuan", "Dollar"],
+      answer: 1
+    },
+    {
+      question: "Which is the largest planet in our solar system?",
+      options: ["Earth", "Jupiter", "Saturn", "Neptune"],
+      answer: 1
+    },
+    {
+      question: "What does ISRO stand for?",
+      options: [
+        "Indian Scientific Research Organisation",
+        "Indian Space Research Organisation",
+        "International Space Rocket Organisation",
+        "Indian Satellite and Rocket Office"
+      ],
+      answer: 1
+    },
+    {
+      question: "Who painted the Mona Lisa?",
+      options: ["Leonardo da Vinci", "Pablo Picasso", "Vincent Van Gogh", "Michelangelo"],
+      answer: 0
+    },
+    {
+      question: "Who was the first Indian woman to win a Nobel Prize?",
+      options: ["Mother Teresa", "Kalpana Chawla", "Indira Gandhi", "Sarojini Naidu"],
+      answer: 0
+    },
+    {
+      question: "What is the capital of Canada?",
+      options: ["Toronto", "Ottawa", "Montreal", "Vancouver"],
+      answer: 1
+    },
+    {
+      question: "Which river flows through London?",
+      options: ["Seine", "Danube", "Thames", "Volga"],
+      answer: 2
+    },
+    {
+      question: "Which gas is used for cooling in refrigerators?",
+      options: ["Oxygen", "Freon", "Hydrogen", "Nitrogen"],
+      answer: 1
+    },
+    {
+      question: "Which country is famous for tulips and windmills?",
+      options: ["Denmark", "Switzerland", "Netherlands", "Belgium"],
+      answer: 2
+    },
+    {
+      question: "What is the national sport of Canada?",
+      options: ["Ice hockey", "Basketball", "Baseball", "Soccer"],
+      answer: 0
+    },
+    {
+      question: "Which planet has rings around it?",
+      options: ["Mars", "Venus", "Saturn", "Uranus"],
+      answer: 2
+    },
+    {
+      question: "Which vitamin helps in blood clotting?",
+      options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin K"],
+      answer: 3
+    },
+    {
+      question: "Where is the Great Barrier Reef located?",
+      options: ["India", "Brazil", "USA", "Australia"],
+      answer: 3
+    }
+  ]
+};
