@@ -15,15 +15,35 @@ let userAnswers = [];
 
 document.getElementById("quiz-title").textContent = `${subject.toUpperCase()} - ${test}`;
 
+let current = 0;
+
 function renderQuestion() {
-  if (current >= questions.length) return;
-  let q = questions[current];
+  if (!questions || current >= questions.length || current < 0) return;
+
+  const q = questions[current];
   let html = `<h3>Q${current + 1}. ${q.question}</h3>`;
   q.options.forEach((opt, i) => {
     html += `<label><input type="radio" name="opt" value="${i}"> ${opt}</label><br>`;
   });
+
   document.getElementById("question-box").innerHTML = html;
+
+  // Enable/disable buttons
+  document.getElementById("prev-btn").disabled = current === 0;
+  document.getElementById("next-btn").disabled = current === questions.length - 1;
 }
+
+function next() {
+  if (current < questions.length - 1) current++;
+  renderQuestion();
+}
+
+function prev() {
+  if (current > 0) current--;
+  renderQuestion();
+}
+
+renderQuestion();
 
 function submitQuiz() {
   let selected = document.querySelector('input[name="opt"]:checked');
@@ -54,6 +74,5 @@ function startTimer() {
     timerDisplay.textContent = `Time Left: ${min}:${sec < 10 ? "0" : ""}${sec}`;
   }, 1000);
 }
-
 renderQuestion();
 startTimer();
