@@ -1,0 +1,1 @@
+// Main JS placeholder - for future features like dark mode toggle

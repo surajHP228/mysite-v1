@@ -1,0 +1,1 @@
+document.getElementById('quiz-container').innerHTML = '<p>Quiz coming soon. This is a placeholder for now.</p>';
