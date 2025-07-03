@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Result</title>
+  <link rel="stylesheet" href="../css/quiz-style.css" />
+</head>
+<body>
+  <h1>Quiz Result</h1>
+  <div id="score-output"></div>
+  <div id="review-box"></div>
+  <a href="index.html">Back to Quiz List</a>
+
+  <script>
+    const result = JSON.parse(localStorage.getItem("quizResult"));
+    document.getElementById("score-output").innerHTML = `<h2>Your Score: ${result.score}/${result.total}</h2>`;
+    let review = '';
+    result.questions.forEach((q, i) => {
+      review += `<p><strong>Q${i+1}:</strong> ${q.question}<br/>
+      Your Answer: ${q.options[q.selected]}<br/>
+      Correct Answer: ${q.options[q.answer]}</p><hr/>`;
+    });
+    document.getElementById("review-box").innerHTML = review;
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  padding: 20px;
+}
+h1 {
+  color: #00bcd4;
+}
+.selector a {
+  display: block;
+  background: #1f1f1f;
+  margin: 10px 0;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+}
+.selector a:hover {
+  background-color: #333;
+}
+#quiz-container {
+  margin-top: 20px;
+}
+#question-box {
+  margin: 20px 0;
+}
