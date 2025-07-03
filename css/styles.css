@@ -119,3 +119,31 @@ main {
     padding: 15px;
   }
 }
+
+
+/* Force dark mode as default */
+body {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+header {
+  background: #1e1e1e;
+}
+
+nav a {
+  color: #90caf9;
+}
+
+.btn {
+  background: #90caf9;
+  color: #121212;
+}
+
+.project-card,
+.blog-post,
+.contact-form,
+.gallery img {
+  background: #2c2c2c;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
