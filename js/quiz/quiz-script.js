@@ -1,7 +1,15 @@
 let url = new URLSearchParams(window.location.search);
 let subject = url.get("subject");
 let test = url.get("test");
-let questions = subject === "gk" ? gkQuestions[test] : mathQuestions[test];
+let questions = {};
+if (subject === "gk") questions = gkQuestions[test];
+else if (subject === "math") questions = mathQuestions[test];
+else if (subject === "science") questions = scienceQuestions[test];
+else if (subject === "history") questions = historyQuestions[test];
+else if (subject === "geography") questions = geographyQuestions[test];
+else if (subject === "english") questions = englishQuestions[test];
+else if (subject === "computer") questions = computerQuestions[test];
+else if (subject === "reasoning") questions = reasoningQuestions[test];
 let current = 0, score = 0;
 let userAnswers = [];
 
