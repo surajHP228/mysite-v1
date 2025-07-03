@@ -1,1 +1,128 @@
-const gkQuestions = {"Test 1": [{"question": "General Knowledge T1 Q1", "options": ["A0", "B0", "C0", "D0"], "answer": 0}, {"question": "General Knowledge T1 Q2", "options": ["A1", "B1", "C1", "D1"], "answer": 1}, {"question": "General Knowledge T1 Q3", "options": ["A2", "B2", "C2", "D2"], "answer": 2}, {"question": "General Knowledge T1 Q4", "options": ["A3", "B3", "C3", "D3"], "answer": 3}, {"question": "General Knowledge T1 Q5", "options": ["A4", "B4", "C4", "D4"], "answer": 0}, {"question": "General Knowledge T1 Q6", "options": ["A5", "B5", "C5", "D5"], "answer": 1}, {"question": "General Knowledge T1 Q7", "options": ["A6", "B6", "C6", "D6"], "answer": 2}, {"question": "General Knowledge T1 Q8", "options": ["A7", "B7", "C7", "D7"], "answer": 3}, {"question": "General Knowledge T1 Q9", "options": ["A8", "B8", "C8", "D8"], "answer": 0}, {"question": "General Knowledge T1 Q10", "options": ["A9", "B9", "C9", "D9"], "answer": 1}, {"question": "General Knowledge T1 Q11", "options": ["A10", "B10", "C10", "D10"], "answer": 2}, {"question": "General Knowledge T1 Q12", "options": ["A11", "B11", "C11", "D11"], "answer": 3}, {"question": "General Knowledge T1 Q13", "options": ["A12", "B12", "C12", "D12"], "answer": 0}, {"question": "General Knowledge T1 Q14", "options": ["A13", "B13", "C13", "D13"], "answer": 1}, {"question": "General Knowledge T1 Q15", "options": ["A14", "B14", "C14", "D14"], "answer": 2}, {"question": "General Knowledge T1 Q16", "options": ["A15", "B15", "C15", "D15"], "answer": 3}, {"question": "General Knowledge T1 Q17", "options": ["A16", "B16", "C16", "D16"], "answer": 0}, {"question": "General Knowledge T1 Q18", "options": ["A17", "B17", "C17", "D17"], "answer": 1}, {"question": "General Knowledge T1 Q19", "options": ["A18", "B18", "C18", "D18"], "answer": 2}, {"question": "General Knowledge T1 Q20", "options": ["A19", "B19", "C19", "D19"], "answer": 3}, {"question": "General Knowledge T1 Q21", "options": ["A20", "B20", "C20", "D20"], "answer": 0}, {"question": "General Knowledge T1 Q22", "options": ["A21", "B21", "C21", "D21"], "answer": 1}, {"question": "General Knowledge T1 Q23", "options": ["A22", "B22", "C22", "D22"], "answer": 2}, {"question": "General Knowledge T1 Q24", "options": ["A23", "B23", "C23", "D23"], "answer": 3}, {"question": "General Knowledge T1 Q25", "options": ["A24", "B24", "C24", "D24"], "answer": 0}], "Test 2": [{"question": "General Knowledge T2 Q1", "options": ["A0", "B0", "C0", "D0"], "answer": 1}, {"question": "General Knowledge T2 Q2", "options": ["A1", "B1", "C1", "D1"], "answer": 2}, {"question": "General Knowledge T2 Q3", "options": ["A2", "B2", "C2", "D2"], "answer": 3}, {"question": "General Knowledge T2 Q4", "options": ["A3", "B3", "C3", "D3"], "answer": 0}, {"question": "General Knowledge T2 Q5", "options": ["A4", "B4", "C4", "D4"], "answer": 1}, {"question": "General Knowledge T2 Q6", "options": ["A5", "B5", "C5", "D5"], "answer": 2}, {"question": "General Knowledge T2 Q7", "options": ["A6", "B6", "C6", "D6"], "answer": 3}, {"question": "General Knowledge T2 Q8", "options": ["A7", "B7", "C7", "D7"], "answer": 0}, {"question": "General Knowledge T2 Q9", "options": ["A8", "B8", "C8", "D8"], "answer": 1}, {"question": "General Knowledge T2 Q10", "options": ["A9", "B9", "C9", "D9"], "answer": 2}, {"question": "General Knowledge T2 Q11", "options": ["A10", "B10", "C10", "D10"], "answer": 3}, {"question": "General Knowledge T2 Q12", "options": ["A11", "B11", "C11", "D11"], "answer": 0}, {"question": "General Knowledge T2 Q13", "options": ["A12", "B12", "C12", "D12"], "answer": 1}, {"question": "General Knowledge T2 Q14", "options": ["A13", "B13", "C13", "D13"], "answer": 2}, {"question": "General Knowledge T2 Q15", "options": ["A14", "B14", "C14", "D14"], "answer": 3}, {"question": "General Knowledge T2 Q16", "options": ["A15", "B15", "C15", "D15"], "answer": 0}, {"question": "General Knowledge T2 Q17", "options": ["A16", "B16", "C16", "D16"], "answer": 1}, {"question": "General Knowledge T2 Q18", "options": ["A17", "B17", "C17", "D17"], "answer": 2}, {"question": "General Knowledge T2 Q19", "options": ["A18", "B18", "C18", "D18"], "answer": 3}, {"question": "General Knowledge T2 Q20", "options": ["A19", "B19", "C19", "D19"], "answer": 0}, {"question": "General Knowledge T2 Q21", "options": ["A20", "B20", "C20", "D20"], "answer": 1}, {"question": "General Knowledge T2 Q22", "options": ["A21", "B21", "C21", "D21"], "answer": 2}, {"question": "General Knowledge T2 Q23", "options": ["A22", "B22", "C22", "D22"], "answer": 3}, {"question": "General Knowledge T2 Q24", "options": ["A23", "B23", "C23", "D23"], "answer": 0}, {"question": "General Knowledge T2 Q25", "options": ["A24", "B24", "C24", "D24"], "answer": 1}]};
+const gkQuestions = {
+  "Test 1": [
+    {
+      question: "What is the capital of Australia?",
+      options: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+      answer: 2
+    },
+    {
+      question: "Who is known as the Father of the Nation in India?",
+      options: ["Jawaharlal Nehru", "Subhas Chandra Bose", "Mahatma Gandhi", "Dr. B.R. Ambedkar"],
+      answer: 2
+    },
+    {
+      question: "Which country hosted the 2020 Summer Olympics?",
+      options: ["China", "Japan", "France", "Brazil"],
+      answer: 1
+    },
+    {
+      question: "Which river is the longest in the world?",
+      options: ["Amazon", "Yangtze", "Nile", "Ganga"],
+      answer: 2
+    },
+    {
+      question: "Who discovered Penicillin?",
+      options: ["Marie Curie", "Isaac Newton", "Albert Einstein", "Alexander Fleming"],
+      answer: 3
+    },
+    {
+      question: "Which planet has the most moons?",
+      options: ["Saturn", "Jupiter", "Uranus", "Neptune"],
+      answer: 0
+    },
+    {
+      question: "Which is the largest ocean in the world?",
+      options: ["Indian", "Atlantic", "Pacific", "Arctic"],
+      answer: 2
+    },
+    {
+      question: "Who was the first President of India?",
+      options: ["Dr. Rajendra Prasad", "Lal Bahadur Shastri", "Jawaharlal Nehru", "APJ Abdul Kalam"],
+      answer: 0
+    },
+    {
+      question: "Which state is called the 'Spice Garden of India'?",
+      options: ["Kerala", "Tamil Nadu", "Assam", "Goa"],
+      answer: 0
+    },
+    {
+      question: "Which is the smallest continent?",
+      options: ["Europe", "Australia", "Antarctica", "South America"],
+      answer: 1
+    },
+    {
+      question: "Which element has the chemical symbol 'O'?",
+      options: ["Osmium", "Oxygen", "Oxide", "Omnium"],
+      answer: 1
+    },
+    {
+      question: "Which sport is associated with Wimbledon?",
+      options: ["Football", "Tennis", "Cricket", "Golf"],
+      answer: 1
+    },
+    {
+      question: "Which festival is known as the 'Festival of Lights'?",
+      options: ["Holi", "Diwali", "Eid", "Baisakhi"],
+      answer: 1
+    },
+    {
+      question: "Which is the national animal of India?",
+      options: ["Elephant", "Tiger", "Lion", "Leopard"],
+      answer: 1
+    },
+    {
+      question: "Who invented the telephone?",
+      options: ["Graham Bell", "Thomas Edison", "James Watt", "Newton"],
+      answer: 0
+    },
+    {
+      question: "Which gas do plants absorb from the atmosphere?",
+      options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+      answer: 2
+    },
+    {
+      question: "Which Mughal emperor built the Taj Mahal?",
+      options: ["Akbar", "Shah Jahan", "Babur", "Jahangir"],
+      answer: 1
+    },
+    {
+      question: "In which year did India get independence?",
+      options: ["1945", "1946", "1947", "1948"],
+      answer: 2
+    },
+    {
+      question: "Who is the current UN Secretary-General (2024)?",
+      options: ["António Guterres", "Ban Ki-moon", "Kofi Annan", "Tedros Ghebreyesus"],
+      answer: 0
+    },
+    {
+      question: "Which Indian city is known as the 'Pink City'?",
+      options: ["Jodhpur", "Udaipur", "Jaipur", "Agra"],
+      answer: 2
+    },
+    {
+      question: "Who was the first woman Prime Minister of India?",
+      options: ["Indira Gandhi", "Sonia Gandhi", "Pratibha Patil", "Sarojini Naidu"],
+      answer: 0
+    },
+    {
+      question: "Which metal is liquid at room temperature?",
+      options: ["Mercury", "Aluminum", "Lead", "Zinc"],
+      answer: 0
+    },
+    {
+      question: "Which country has the most population?",
+      options: ["USA", "China", "India", "Russia"],
+      answer: 2
+    },
+    {
+      question: "Which Indian state has the longest coastline?",
+      options: ["Tamil Nadu", "Gujarat", "Kerala", "Maharashtra"],
+      answer: 1
+    },
+    {
+      question: "Which is the largest desert in the world?",
+      options: ["Gobi", "Sahara", "Thar", "Antarctica"],
+      answer: 3
+    }
+  ],
