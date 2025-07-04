@@ -2,110 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Web - Home</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome - My Website</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">My Web</div>
-      <ul class="nav-links">
-        <li><span id="userEmail" style="color: white; margin-right: 10px;"></span></li>
-        <li><a href="login.html" id="loginBtn">Login</a></li>
-        <li><a href="signup.html" id="signupBtn">Sign up for free</a></li>
-        <li><a href="#" id="logoutBtn" style="display:none;">Logout</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Welcome to My Personal Website</h1>
-    <p>Aspiring SSC CGL Candidate | Quiz Taker | Blogger</p>
-    <a href="resume.html" class="cta-btn">View Resume</a>
+  <main>
+  <section class="reveal" style="text-align: center; padding: 2rem;">
+    <img src="assets/profile.jpg" alt="Profile" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 1rem;" />
+    <h2>Hello, I'm <strong>Suraj Kumar</strong></h2>
+    <h3 id="typing-text"></h3>
   </section>
+</main>
 
-  <!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
 <script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyATP7VOFMgDqDnRQnMm6mW6ZhG8JOFV9Xo",
-    authDomain: "my-sitesv1.firebaseapp.com",
-    projectId: "my-sitesv1",
-    storageBucket: "my-sitesv1.appspot.com",
-    messagingSenderId: "1080279631674",
-    appId: "1:1080279631674:web:0ce41bcc49dba19527f203"
-  };
+  document.addEventListener("DOMContentLoaded", function () {
+    const textArray = ["Web Developer", "Quiz App Builder", "SSC Aspirant"];
+    let index = 0, charIndex = 0;
+    const typingText = document.getElementById("typing-text");
 
-  firebase.initializeApp(firebaseConfig);
-</script>
-<script>
-  firebase.auth().onAuthStateChanged((user) => {
-    const loginBtn = document.getElementById("loginBtn");
-    const signupBtn = document.getElementById("signupBtn");
-    const logoutBtn = document.getElementById("logoutBtn");
-    const userEmailSpan = document.getElementById("userEmail");
-
-    if (user && user.emailVerified) {
-      loginBtn.style.display = "none";
-      signupBtn.style.display = "none";
-      logoutBtn.style.display = "inline-block";
-      userEmailSpan.textContent = `👋 Hi, ${user.email}`;
-    } else {
-      loginBtn.style.display = "inline-block";
-      signupBtn.style.display = "inline-block";
-      logoutBtn.style.display = "none";
-      userEmailSpan.textContent = '';
+    function type() {
+      if (charIndex < textArray[index].length) {
+        typingText.textContent += textArray[index].charAt(charIndex++);
+        setTimeout(type, 100);
+      } else {
+        setTimeout(erase, 2000);
+      }
     }
 
-    logoutBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      firebase.auth().signOut().then(() => {
-        showToast("👋 Logged out successfully");
-        window.location.href = "index.html";
-      });
-    });
+    function erase() {
+      if (charIndex > 0) {
+        typingText.textContent = typingText.textContent.slice(0, --charIndex);
+        setTimeout(erase, 50);
+      } else {
+        index = (index + 1) % textArray.length;
+        setTimeout(type, 500);
+      }
+    }
+
+    type();
   });
 </script>
-
-<!-- 🔔 Toast Container -->
-<div id="toast" class="toast"></div>
-
-<style>
-.toast {
-  visibility: hidden;
-  min-width: 250px;
-  background-color: #323232;
-  color: #fff;
-  text-align: center;
-  border-radius: 8px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1000;
-  left: 50%;
-  bottom: 40px;
-  font-size: 16px;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.5s ease, bottom 0.5s ease;
-}
-.toast.show {
-  visibility: visible;
-  opacity: 1;
-  bottom: 60px;
-}
-</style>
-
-<script>
-function showToast(message) {
-  const toast = document.getElementById("toast");
-  toast.textContent = message;
-  toast.className = "toast show";
-  setTimeout(() => {
-    toast.className = "toast";
-  }, 3000);
-}
-</script>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="quiz/index.html">Quiz</a>
+      <a href="blog.html">Blog</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="extras.html">Extras</a>
+    </nav>
+  </header>
+  <main>
+    <section class="reveal" class="welcome">
+      <img src="assets/logo.png" alt="Logo" class="logo"/>
+      <h2>Hello, I'm [Suraj Kumar]</h2>
+      <p>This is a modern and responsive personal website.</p>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+  <footer style="margin-top: 2rem; padding: 1rem; text-align: center; background: #1e1e1e; color: #ccc;">
+  <p>&copy; 2025 Suraj Kumar | <a href="mailto:suraj@example.com" style="color: #90caf9;">Contact Me</a></p>
+  <p>
+    <a href="https://github.com/" target="_blank" style="margin-right: 1rem; color: #90caf9;">GitHub</a>
+    <a href="https://upwork.com/" target="_blank" style="color: #90caf9;">Upwork</a>
+  </p>
+</footer>
 </body>
 </html>
