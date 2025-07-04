@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Projects</title>
 </head>
 <body>
-  <header>
-  <h1>Welcome to My Website</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="resume.html">Resume</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="blog.html">Blog</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="extras.html">Extras</a>
-  </nav>
-</header>
-  <header><h1>My Projects</h1></header>
-  <main>
-    <section class="reveal" class="projects">
-      <div class="project-card">Project 1</div>
-      <div class="project-card">Project 2</div>
-      <div class="project-card">Project 3</div>
-    </section>
-  </main>
-  <footer style="margin-top: 2rem; padding: 1rem; text-align: center; background: #1e1e1e; color: #ccc;">
-  <p>&copy; 2025 Suraj Kumar | <a href="mailto:suraj@example.com" style="color: #90caf9;">Contact Me</a></p>
-  <p>
-    <a href="https://github.com/" target="_blank" style="margin-right: 1rem; color: #90caf9;">GitHub</a>
-    <a href="https://linkedin.com/" target="_blank" style="color: #90caf9;">LinkedIn</a>
-  </p>
-</footer>
+<h1>Projects Page</h1>
+<p>This is a protected page. Please login via Firebase.</p>
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyATP7VOFMgDqDnRQnMm6mW6ZhG8JOFV9Xo",
+    authDomain: "my-sitesv1.firebaseapp.com",
+    projectId: "my-sitesv1",
+    storageBucket: "my-sitesv1.appspot.com",
+    messagingSenderId: "1080279631674",
+    appId: "1:1080279631674:web:0ce41bcc49dba19527f203"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+  firebase.auth().onAuthStateChanged((user) => {
+    if (!user || !user.emailVerified) {
+      alert("⚠️ Login Required to access this page.");
+      window.location.href = "login.html";
+    }
+  });
+</script>
 </body>
 </html>
